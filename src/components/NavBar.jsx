@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "../assets/css/navbar.css";
+import { AuthService } from "../services/auth.service";
+import { authService } from "../config/Auth/Auth";
 
 export const Navbar = ({
   setOpen,
@@ -23,7 +25,7 @@ export const Navbar = ({
       }`}
     >
       <div className="nav-wrapper container">
-        <span className="logo">Notes</span>
+        <span className="logo">NotesPal</span>
         <div className="nav-options">
           <div className="nav-icon">
             <div className={`palettes ${onPalette && "active"}`}>
@@ -45,6 +47,9 @@ export const Navbar = ({
           </div>
           <div className="nav-icon" onClick={() => setOpen(true)}>
             <i className="fa-solid fa-plus"></i>
+          </div>
+          <div className="nav-icon" onClick={() => authService.logOut()}>
+            <i className="fa-solid fa-right-from-bracket"></i>
           </div>
         </div>
       </div>
