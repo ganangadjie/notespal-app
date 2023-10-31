@@ -1,25 +1,11 @@
-import { useState } from 'react'
-import './App.css'
-import Note from './components/Note'
-import Header from './components/Header'
-// import FirebaseAuth from './components/FirebaseAuth'
+import React from 'react'
+import Routers from './routes/Routes'
+import { BrowserRouter } from 'react-router-dom'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export const App = () => {
   return (
-    <>
-    <div>
-      <Header/>
-      <div className="container">
-        <Note/>
-      </div>
-    </div>
-      {/* <h1>Firebase DEMO</h1> */}
-      {/* <FirebaseAuth></FirebaseAuth> */}
-      
-    </>
-  )
+    <BrowserRouter>
+      <Routers />
+    </BrowserRouter>
+  );
 }
-
-export default App
