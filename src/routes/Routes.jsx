@@ -12,7 +12,6 @@ export default function Routers() {
     <Routes>
       <Route path="/" element={<PrivateRoute />}>
         <Route path="/" element={<HomePage />}></Route>
-        
       </Route>
       <Route path="/" element={<ProtectedRoute />}>
         <Route path="/LoginPage" element={<LoginPage />} />
