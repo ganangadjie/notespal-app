@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "../assets/css/navbar.css";
-import { AuthService } from "../services/AuthService";
-import { authService } from "../config/Auth/Auth";
+import { AuthService } from "../services/auth.service";
+import { authService } from "../configs/auth";
 
 export const Navbar = ({
   setOpen,
