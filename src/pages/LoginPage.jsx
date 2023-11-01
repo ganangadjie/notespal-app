@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../assets/css/Login.css";
-import { APIAuth } from "../config/APIs/Auth";
+import { APIAuth } from "../apis/APIAuth";
 import { useNavigate } from "react-router-dom";
 
 export const LoginPage = () => {
