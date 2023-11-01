@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "../assets/css/navbar.css";
-import { AuthService } from "../services/auth.service";
+import { AuthService } from "../services/AuthService";
 import { authService } from "../config/Auth/Auth";
 
 export const Navbar = ({
