@@ -1,11 +1,10 @@
-import React from 'react'
-import { PrivateRoute } from './PrivateRoute';
-import HomePage from '../pages/HomePage';
-import { ProtectedRoute } from './ProtectedRoute';
-import Unauthorized from '../pages/Unauthorized';
-import { LoginPage } from '../pages/LoginPage';
-import { Route, Routes } from 'react-router-dom';
-
+import React from "react";
+import { PrivateRoute } from "./PrivateRoute";
+import HomePage from "../pages/HomePage";
+import { ProtectedRoute } from "./ProtectedRoute";
+import Unauthorized from "../pages/Unauthorized";
+import { LoginPage } from "../pages/LoginPage";
+import { Route, Routes } from "react-router-dom";
 
 export default function Routers() {
   return (
@@ -20,4 +19,3 @@ export default function Routers() {
     </Routes>
   );
 }
-

@@ -1,15 +1,23 @@
 .login-container {
-  width: 300px;
-  margin: 0 auto;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(8, 64, 131);
+}
+
+.box {
+  background-color: #fff;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  text-align: center;
+  width: 300px;
 }
 
 h2 {
+  font-size: 2rem;
   margin-bottom: 20px;
 }
 
@@ -26,7 +34,7 @@ input {
 }
 
 button {
-  background-color: #007bff;
+  background-color: rgb(8, 64, 131);
   color: #fff;
   padding: 10px;
   border: none;
@@ -35,5 +43,5 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: rgb(7, 73, 154);
 }
