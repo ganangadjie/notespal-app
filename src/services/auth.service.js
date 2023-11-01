@@ -1,6 +1,6 @@
 import Cookies from "js-cookie";
 import { signOut } from "firebase/auth";
-import { auth } from "../config/firebase";
+import { auth } from "../configs/firebase";
 
 export class AuthService {
   isAuthorized() {
