@@ -1,6 +1,6 @@
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../../firebase";
-import { authService } from "../../Auth/Auth";
+import { auth } from "../configs/firebase";
+import { authService } from "../configs/auth";
 
 export const APIAuth = {
   signInWithCredentials: async ({ email, password }) => {

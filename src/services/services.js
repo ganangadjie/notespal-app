@@ -1,5 +1,5 @@
 import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
-import {db, storage} from "../config/firebase"
+import {db, storage} from "../configs/firebase"
 import {
   getDocs,
   getDoc,

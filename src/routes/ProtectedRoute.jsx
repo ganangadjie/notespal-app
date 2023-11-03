@@ -1,5 +1,5 @@
 import React from "react";
-import { authService } from "../config/Auth/Auth";
+import { authService } from "../configs/auth";
 import { Navigate, Outlet } from "react-router-dom";
 
 export function ProtectedRoute() {
